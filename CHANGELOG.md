@@ -2,6 +2,9 @@
 
 [Full changelog](https://github.com/mozilla/glean/compare/v50.0.1...main)
 
+* General
+  * BREAKING CHANGE: Dropped `ping_name` argument from all `test_get_num_recorded_errors` methods ([#2088](https://github.com/mozilla/glean/pull/2088))
+    Errors default to the `metrics` ping, so that's what is queried internally.
 * iOS
   * Dropped usage of Carthage for internal dependencies.
 

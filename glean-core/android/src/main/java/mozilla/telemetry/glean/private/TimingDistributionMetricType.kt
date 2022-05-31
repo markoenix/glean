@@ -62,8 +62,7 @@ class TimingDistributionMetricType(meta: CommonMetricData, timeUnit: TimeUnit) :
 
     @VisibleForTesting(otherwise = VisibleForTesting.NONE)
     @JvmOverloads
-    fun testGetNumRecordedErrors(error: ErrorType, pingName: String? = null) =
-        inner.testGetNumRecordedErrors(error, pingName)
+    fun testGetNumRecordedErrors(error: ErrorType) = inner.testGetNumRecordedErrors(error)
 
     @VisibleForTesting(otherwise = VisibleForTesting.NONE)
     @JvmOverloads

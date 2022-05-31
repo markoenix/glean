@@ -146,7 +146,5 @@ class EventMetricType<ExtraKeysEnum, ExtraObject> internal constructor(
      */
     @VisibleForTesting(otherwise = VisibleForTesting.NONE)
     @JvmOverloads
-    fun testGetNumRecordedErrors(errorType: ErrorType, pingName: String? = null): Int {
-        return inner.testGetNumRecordedErrors(errorType, pingName)
-    }
+    fun testGetNumRecordedErrors(errorType: ErrorType) = inner.testGetNumRecordedErrors(errorType)
 }
