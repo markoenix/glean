@@ -31,11 +31,14 @@ __email__ = "glean-team@mozilla.com"
 
 
 GLEAN_PARSER_VERSION = "6.1.1"
+parser_version = VersionInfo.parse(GLEAN_PARSER_VERSION)
+parser_version_next_major = parser_version.bump_major()
 
 
-if glean_parser.__version__ != GLEAN_PARSER_VERSION:
+current_parser = VersionInfo.parse(glean_parser.__version__)
+if current_parser < parser_version or current_parser >= parser_version_next_major:
     warnings.warn(
-        f"glean_sdk expected glean_parser v{GLEAN_PARSER_VERSION}, "
+        f"glean_sdk expected glean_parser ~= v{GLEAN_PARSER_VERSION}, "
         f"found v{glean_parser.__version__}",
         Warning,
     )
