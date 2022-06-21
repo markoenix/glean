@@ -6,6 +6,7 @@
   - [Kotlin](user/adding-glean-to-your-project/kotlin.md)
   - [Swift](user/adding-glean-to-your-project/swift.md)
   - [Python](user/adding-glean-to-your-project/python.md)
+  - [Rust](user/adding-glean-to-your-project/rust.md)
   - [JavaScript](user/adding-glean-to-your-project/javascript.md)
   - [Qt/QML](user/adding-glean-to-your-project/qt.md)
 - [Integrating Glean for project managers](user/integrating-glean-for-product-managers.md)
